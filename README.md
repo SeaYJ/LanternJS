@@ -7,6 +7,14 @@
 
 # 使用
 
+```
+npm i lanternjs-seayj
+```
+或者
+```html
+<script src="https://cdn.jsdelivr.net/npm/hexo-lanternjs@1.0.0/lantern.min.js"></script>
+```
+
 ## 1）给一个`wrapper`标签
 首先，你需要在页面任意地方添加如下代码：
 ```html
