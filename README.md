@@ -8,7 +8,7 @@
 # 使用
 
 ```
-npm i lanternjs-seayj --save
+npm i lanternjs-seayj
 ```
 或者
 ```html
