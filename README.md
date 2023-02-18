@@ -1,11 +1,11 @@
 # LanternJS
 这是一个前端小插件，可以快速引入一个可控显示的灯笼挂饰，使用方便快捷、方便。
 
-# 说明
+# 一、说明
 这个插件使用非常方便，您只需要给一个`wrapper`标签，然后通过实例化`Class Lantern`为一个对象即可为网页添加喜庆小灯笼。下面是效果图：
 ![Snipaste_2023-01-21_09-08-02](https://user-images.githubusercontent.com/86941555/213831227-42be7b85-2e05-4175-8694-bb74c0beb04b.jpg)
 
-# 使用
+# 二、使用
 
 ```
 npm i lanternjs-seayj
@@ -93,6 +93,6 @@ let lantern = new Lantern('lantern-wrapper', {});
 ### **[optional] content**
 这个值顾名思义，就是添加一个你需要展示的内容。例如：`content: '万事如意'`。我们会选中前四个字符，同时对于未给出的值依旧采取默认值。
 
-# 最后
+# 三、最后
 如果有任何问题，欢迎提出issues。
 如果可以的话，可以给个小小的star吗？这对我真的很重要🥰，谢谢了！
