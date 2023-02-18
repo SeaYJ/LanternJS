@@ -21,13 +21,20 @@ npm i lanternjs-seayj
 <div id="lantern-wrapper" class="lantern-wrapper" no-select></div>
 ```
 
+<br/>
+
 ### **[must] id="lantern-wrapper"**
 这个`id`非常重要，如果没有我们将不知道代码需要插入在哪里。
+
+<br/>
 
 ### **[optional] no-select**
 在灯笼中会用到文字，而这些文字有可能会被用户选中，可能会影响用户体验，而这些已经被我们考虑到了。
 
 您只需要在标签中添加`no-select`属性即可快速实现禁止选中效果，并且兼容多浏览器(不包括IE)。
+
+<br/>
+<br/>
 
 ## 2）实例化对象
 你需要在合适的地方(在引入插件代码和`wrapper`标签代码之后的任意位置)实例化一个对象，就像下面这样：
@@ -50,12 +57,18 @@ let lantern = new Lantern('lantern-wrapper', {
 let lantern = new Lantern('lantern-wrapper', {});
 ```
 
+<br/>
+
 ### **[must] lantern-wrapper**
 这个参数是必须的，并且值为`wrapper`标签的`id`名称，用来帮助我们找到装内容的盒子。
+
+<br/>
 
 ### **[must] {}**
 这个参数是一个对象，如果你不想过多设置(全部使用默认设置)，那么可以传一个空对象。注意，它**可以为空但是必须要有**！
 如果你需要进行一些个性化设置，那么你将需要用到这个对象里面的一些属性。下面一一为您介绍：
+
+<br/>
 
 ### **[optional] date**
 
@@ -71,6 +84,8 @@ let lantern = new Lantern('lantern-wrapper', {});
 
 **注意**：
 如果您只设置了`from`而不设置`to`，这并不代表一直展示。因为**我们对于未给出的设置，通通默许为默认值(后面除特殊说明外均一致)**。
+
+<br/>
 
 ### **[optional] postion**
 
@@ -90,8 +105,13 @@ let lantern = new Lantern('lantern-wrapper', {});
 
 最后是`lanternRL`参数，这个参数代表灯笼距离最近侧的距离，默认值为`[10, 150, 150, 10]`。简单说就是左侧灯笼距离左侧距离，右侧灯笼距离右侧距离。设置顺序还是按照**从左往右**依次设置。注意的是，这里**必须**采用数组的方式传值，给一个数字或者字符串是不被认可的。（这也好理解，不然灯笼就会挤到一块去了，不是吗？）
 
+<br/>
+
 ### **[optional] content**
 这个值顾名思义，就是添加一个你需要展示的内容。例如：`content: '万事如意'`。我们会选中前四个字符，同时对于未给出的值依旧采取默认值。
+
+<br/>
+<br/>
 
 # 三、最后
 如果有任何问题，欢迎提出issues。
